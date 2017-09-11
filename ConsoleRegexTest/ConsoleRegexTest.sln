@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleRegexTest", "ConsoleRegexTest.csproj", "{BA3F7E77-767A-4877-815F-A0D1E9A4B7D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestRegexTest", "..\UnitTestRegexTest\UnitTestRegexTest.csproj", "{B02725C8-1096-4DA2-AACC-43414B2DF003}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA3F7E77-767A-4877-815F-A0D1E9A4B7D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA3F7E77-767A-4877-815F-A0D1E9A4B7D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA3F7E77-767A-4877-815F-A0D1E9A4B7D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA3F7E77-767A-4877-815F-A0D1E9A4B7D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B02725C8-1096-4DA2-AACC-43414B2DF003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B02725C8-1096-4DA2-AACC-43414B2DF003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B02725C8-1096-4DA2-AACC-43414B2DF003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B02725C8-1096-4DA2-AACC-43414B2DF003}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
