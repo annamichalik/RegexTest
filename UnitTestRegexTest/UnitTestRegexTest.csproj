@@ -56,9 +56,16 @@
   <ItemGroup>
     <Compile Include="PasswordStrengthRegularExpression.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegexUrlTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleRegexTest\ConsoleRegexTest.csproj">
+      <Project>{ba3f7e77-767a-4877-815f-a0d1e9a4b7d4}</Project>
+      <Name>ConsoleRegexTest</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
