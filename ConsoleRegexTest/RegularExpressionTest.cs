@@ -37,6 +37,17 @@ namespace ConsoleRegexTest
             return Regex.IsMatch(value, matchString);
         }
 
+        /// <summary>
+        /// Is there 3 words  ^(?:\b\w+\b[\s\r\n]*){0,3}$
+        /// 
+        ///
+        /// </summary>
+        public static bool Has3Words(string value)
+        {
+            string matchString =
+                @"^(?:\b\w+\b[\s\r\n]*){0,3}$";
+            return Regex.IsMatch(value, matchString);
+        }
         public static void DoLAzy()
         {
 
