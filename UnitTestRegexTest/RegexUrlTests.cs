@@ -1,24 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ConsoleRegexTest;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using ConsoleRegexTest;
 using NUnit.Framework;
-using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
-namespace UnitTestRegexTest
+
+[TestFixture]
+public class RegexUrlTests
 {
-    [TestClass]
-    public class RegexUrlTests
-    {
-        [Test]
-        public void TrueWithDigit([Values("9Baa!deKL", "9Baa?deKL", "9Baa deKL", "9Baa&deKL")] string value)
-        {
-            var text = UrlReplacements.ReplaceReservedCharacters(value);
-            Assert.AreEqual("9Baa_deKL",text);
-        }
+	[Test]
+	public void TrueWithDigit([Values("9Baa!deKL", "9Baa?deKL", "9Baa deKL", "9Baa&deKL")] string value)
+	{
+		var text = UrlReplacements.ReplaceReservedCharacters(value);
+		Assert.AreEqual("9Baa_deKL", text);
+	}
 
-    }
+	[Test]
+	public void CleanSVGIds([Values("id=\"path420\" />", "id=\"pathaa420\" />")] string value)
+	{
+		var text = UrlReplacements.CleanSVGIds(value);
+		Assert.AreEqual("_ />", text);
+	}
 }
